@@ -7,12 +7,11 @@
     <div class="header-icons">
         {% if site.email %}
             <a aria-label="Send email" href="mailto:{{ site.email }}"><i class="icon fa fa-envelope"></i></a>
+        {% if site.resume_username %}
+            <a aria-label="Resume" target="_blank" href=https://drive.google.com/file/d/1VwEcqkP88B4dkjsK0DNZ4-pPlyvLxu2X/view?usp=sharing"><i class="icon fa-file-pdf-o" aria-hidden="true"></i></a>
         {% endif %}
         {% if site.blue_sky_username %}
             <a aria-label="Resume" target="_blank" href="https://bsky.app/profile/daniel-nguyen.bsky.social"><i class="icon fa fa twitter" aria-hidden="true"></i></a>
-        {% endif %}
-        {% if site.resume_username %}
-            <a aria-label="Resume" target="_blank" href=https://drive.google.com/file/d/1VwEcqkP88B4dkjsK0DNZ4-pPlyvLxu2X/view?usp=sharing"><i class="icon fa-file-pdf-o" aria-hidden="true"></i></a>
         {% endif %}
         {% if site.instagram_username %}
             <a aria-label="My Instagram" target="_blank" href="https://www.instagram.com/{{ site.instagram_username }}"><i class="icon fa fa-instagram" aria-hidden="true"></i></a>
