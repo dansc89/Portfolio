@@ -1,15 +1,13 @@
 <!DOCTYPE html>
+<link rel="stylesheet" href="../assets/css/devicon.min.css">
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="../assets/css/devicon.min.css">
-    {% include head.html %}
-  </head>
+  {% include head.html %}
   <body>
-    {% include header.html %}
-    <section id="about">
-      {% include about.html %}
-    </section>
-    {{ content }} <!-- This line ensures the page content is rendered -->
-    {% include footer.html %}
+      {% include header.html %}
+      <section id="about">
+        {% include about.html %}
+      </section>
+        {{ content }}
+      {% include footer.html %}
   </body>
 </html>
